@@ -1,66 +1,73 @@
-# QR Code AtendUP - Node N8N
+# 🎯 QR Code AtendUP - Node N8N
 
-Um node profissional e completo para N8N que permite gerar QR Codes personalizáveis com múltiplas funcionalidades e branding da AtendUP.
+Um node profissional e personalizável para **n8n**, desenvolvido com foco no mercado brasileiro. Gere QR Codes com múltiplas finalidades, visualmente atrativos e otimizados para o seu fluxo de automações.
 
-## Características Principais
+---
 
-### Tipos de QR Code Suportados
+## 🚀 Principais Funcionalidades
 
-1. **Texto/URL** - QR Codes simples para texto ou links
-2. **PIX** - Pagamentos brasileiros com chave PIX, valor e descrição
-3. **WiFi** - Conexão automática a redes WiFi (SSID, senha, tipo de segurança)
-4. **Contato/vCard** - Informações de contato (nome, telefone, email, empresa)
-5. **Email** - Links para envio de email (destinatário, assunto, corpo da mensagem)
-6. **Telefone/SMS** - Links para chamadas telefônicas ou SMS
-7. **WhatsApp** - Links diretos para conversas no WhatsApp
+### 📌 Tipos de QR Code Suportados
 
-### Personalização Avançada
+* **Texto/URL** – Links simples ou mensagens
+* **PIX** – Pagamentos via chave PIX, com valor e descrição
+* **Wi-Fi** – Conexão automática à rede (SSID, senha, segurança)
+* **vCard/Contato** – Nome, telefone, email, empresa e mais
+* **Email** – QR para envio de mensagens com assunto e corpo
+* **Telefone/SMS** – Chamadas telefônicas e envio de SMS
+* **WhatsApp** – Mensagens diretas com número e texto pré-definido
 
-- **Cores customizáveis** - Fundo e primeiro plano
-- **Tamanhos variáveis** - De 200x200 até 1000x1000 pixels
-- **Múltiplos formatos** - PNG, JPG, SVG
-- **Níveis de correção de erro** - Baixo (L), Médio (M), Quartil (Q), Alto (H)
-- **Margem ajustável** - Controle total sobre o espaçamento
-- **Upload de logo personalizado** - Centralizado no QR Code
+### 🎨 Personalização Avançada
 
-### Templates Prontos
+* Cores customizáveis (fundo e frente)
+* Tamanhos de 200x200 até 1000x1000px
+* Formatos disponíveis: **PNG, JPG, SVG**
+* Níveis de correção de erro: L, M, Q, H
+* Margens ajustáveis
+* Inserção de logo central (marca personalizada)
 
-- **Corporativo** - Cores profissionais (cinza claro e azul escuro)
-- **Casual** - Cores vibrantes (amarelo claro e vermelho coral)
-- **E-commerce** - Cores confiáveis (azul claro e azul escuro)
+### 🧹 Templates Visuais
 
-### Funcionalidades Extras
+* **Corporativo** – Cinza claro + azul escuro
+* **Casual** – Amarelo vibrante + coral
+* **E-commerce** – Azul claro + azul escuro
 
-- **Batch Generation** - Geração de múltiplos QR Codes simultaneamente
-- **Preview automático** - Visualização imediata do resultado
-- **Validação de dados** - Verificação automática dos dados inseridos
-- **Branding AtendUP** - Créditos da empresa nos metadados
+### 🔧 Funcionalidades Extras
 
-## Funcionalidades Brasileiras
+* **Batch generation** – Geração em massa de QR Codes
+* **Preview automático** – Veja antes de usar
+* **Validação inteligente** – Prevenção de erros nos dados
+* **Assinatura AtendUP** – Branding sutil no metadado da imagem
 
-Este node foi especialmente desenvolvido para o mercado brasileiro, incluindo:
+---
 
-- **Suporte completo ao PIX** - Sistema de pagamentos instantâneos do Banco Central
-- **Validação de dados brasileiros** - CPF, CNPJ, telefones
-- **Templates otimizados** - Para empresas brasileiras
+## 🇧🇷 Funcionalidades para o Brasil
 
-## Instalação
+* Total compatibilidade com o sistema **PIX** do Banco Central
+* Validação de dados como **CPF, CNPJ e telefones brasileiros**
+* Templates otimizados para **empresas nacionais**
 
-Consulte o arquivo `INSTALLATION.md` para instruções detalhadas de instalação.
+---
 
-## Uso
+## 📦 Instalação
 
-### Configuração Básica
+Veja o passo a passo completo no arquivo [`INSTALLATION.md`](./INSTALLATION.md)
 
-1. Adicione o node 'QR Code AtendUP' ao seu workflow
-2. Selecione o tipo de QR Code desejado
-3. Preencha os campos específicos do tipo escolhido
-4. Configure a personalização (cores, tamanho, formato)
-5. Execute o workflow
+---
 
-### Exemplos de Uso
+## ⚙️ Como Usar
+
+### 🛠️ Passo a passo
+
+1. Adicione o node `QR Code AtendUP` ao seu fluxo no n8n
+2. Escolha o tipo de QR Code
+3. Preencha os campos conforme a necessidade
+4. Personalize aparência e formato
+5. Execute e use como quiser
+
+### 📋 Exemplos
 
 #### QR Code PIX
+
 ```json
 {
   "qrCodeType": "pix",
@@ -72,7 +79,8 @@ Consulte o arquivo `INSTALLATION.md` para instruções detalhadas de instalaçã
 }
 ```
 
-#### QR Code WiFi
+#### QR Code Wi-Fi
+
 ```json
 {
   "qrCodeType": "wifi",
@@ -83,6 +91,7 @@ Consulte o arquivo `INSTALLATION.md` para instruções detalhadas de instalaçã
 ```
 
 #### QR Code WhatsApp
+
 ```json
 {
   "qrCodeType": "whatsapp",
@@ -91,9 +100,11 @@ Consulte o arquivo `INSTALLATION.md` para instruções detalhadas de instalaçã
 }
 ```
 
-## Saída do Node
+---
 
-O node retorna um objeto JSON com as seguintes informações:
+## 📄 Saída do Node
+
+Exemplo de retorno:
 
 ```json
 {
@@ -102,25 +113,29 @@ O node retorna um objeto JSON com as seguintes informações:
   "qrCodeImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA...",
   "format": "png",
   "size": 300,
-  "generatedBy": "AtendUP - atendup.com - Tel: (45) 99969-1163",
+  "generatedBy": "AtendUP - atendup.com",
   "timestamp": "2025-07-24T22:18:06.714Z"
 }
 ```
 
-## Suporte Técnico
+---
 
-Para suporte técnico ou dúvidas sobre o node, entre em contato:
+## 💬 Suporte & Contato
 
-- **Website:** [atendup.com](https://atendup.com)
-- **Telefone:** (45) 99969-1163
-- **Email:** Disponível no website
+Se precisar de ajuda, fale com a gente!
+Somos gente como você — e adoramos tecnologia! 🚀
 
-## Licença
-
-Este node foi desenvolvido pela AtendUP e está disponível sob licença MIT.
+* 🌐 **Site:** [atendup.com](https://www.atendup.com)
+* 🛋 **WhatsApp:** [Clique para conversar](https://wa.me/5545999691163)
+* 📧 **Email:** [contato@atendup.com](mailto:contato@atendup.com)
 
 ---
 
-**Desenvolvido com ❤️ pela AtendUP**
-**atendup.com - Tel: (45) 99969-1163**
+## 📄 Licença
 
+Distribuído sob licença [MIT](./LICENSE).
+Sinta-se livre para usar, melhorar e contribuir com este projeto.
+
+---
+
+> Desenvolvido com ❤️ por [AtendUP](https://www.atendup.com) — Soluções inteligentes que aproximam tecnologia e pessoas.
