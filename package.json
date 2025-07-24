@@ -1,0 +1,95 @@
+{
+  "name": "n8n-nodes-qrcodes-atendup",
+  "version": "1.0.1",
+  "description": "Node N8N profissional para geração de QR Codes personalizáveis com funcionalidades brasileiras (PIX) - Desenvolvido por AtendUP",
+  "main": "dist/QRCodeAtendUP.node.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "node",
+    "qrcode",
+    "pix",
+    "brasil",
+    "atendup",
+    "automation",
+    "workflow",
+    "qr-code",
+    "generator",
+    "customizable",
+    "wifi",
+    "vcard",
+    "whatsapp",
+    "email",
+    "sms"
+  ],
+  "author": {
+    "name": "AtendUP",
+    "email": "contato@atendup.com",
+    "url": "https://atendup.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atendup/n8n-qrcode-node.git"
+  },
+  "homepage": "https://atendup.com",
+  "bugs": {
+    "url": "https://github.com/atendup/n8n-qrcode-node/issues",
+    "email": "suporte@atendup.com"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": ">=1.0.0"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3",
+    "qrcode-pix": "^2.0.5",
+    "jimp": "^0.22.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/qrcode": "^1.5.2",
+    "typescript": "^5.0.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "INSTALLATION.md",
+    "EXAMPLES.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [],
+    "nodes": [
+      "dist/QRCodeAtendUP.node.js"
+    ]
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://atendup.com/donate"
+  },
+  "contributors": [
+    {
+      "name": "AtendUP Team",
+      "email": "dev@atendup.com",
+      "url": "https://atendup.com"
+    }
+  ],
+  "contact": {
+    "phone": "(45) 99969-1163",
+    "website": "https://atendup.com",
+    "support": "suporte@atendup.com"
+  }
+}
