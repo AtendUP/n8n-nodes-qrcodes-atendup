@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-qrcodes-atendup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node N8N profissional para geração de QR Codes personalizáveis com funcionalidades brasileiras (PIX) - Desenvolvido por AtendUP",
   "main": "dist/QRCodeAtendUP.node.js",
   "scripts": {
@@ -33,11 +33,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atendup/n8n-qrcode-node.git"
+    "url": "https://github.com/atendup/n8n-nodes-qrcodes-atendup.git"
   },
   "homepage": "https://atendup.com",
   "bugs": {
-    "url": "https://github.com/atendup/n8n-qrcode-node/issues",
+    "url": "https://github.com/atendup/n8n-nodes-qrcodes-atendup/issues",
     "email": "suporte@atendup.com"
   },
   "engines": {
@@ -88,7 +88,7 @@
     }
   ],
   "contact": {
-    "phone": "(45) 99969-1163",
+    "phone": "+55 (45) 99969-1163",
     "website": "https://atendup.com",
     "support": "suporte@atendup.com"
   }
