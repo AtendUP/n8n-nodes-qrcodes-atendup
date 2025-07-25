@@ -1,4 +1,6 @@
-# 🎯 QR Code AtendUP - Node N8N
+<p align="center">
+  <img src="https://img.atendup.com/github/QRCodeAtendUP.png" alt="QR Code AtendUP Logo" style="max-width: 100%;" />
+</p>
 
 Um node profissional e personalizável para **n8n**, desenvolvido com foco no mercado brasileiro. Gere QR Codes com múltiplas finalidades, visualmente atrativos e otimizados para o seu fluxo de automações.
 
